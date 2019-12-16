@@ -1,0 +1,15 @@
+.bread-top {
+  height: 70px;
+  background: linear-gradient(to bottom, #704b13, #bc8d47);
+  width: 300px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+
+.bread-bottom {
+  height: 70px;
+  background: linear-gradient(to top, #704b13, #bc8d47);
+  width: 300px;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}

@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  gap:20px ;
+}
+
+.header {
+  grid-column: 1/5;
+}
+
+.burger {
+  grid-column: 2/3;
+}
+
+.ticket {
+  grid-column: 3/4;
+}
+
+.buttons {
+  grid-column: 2/3;
+}
