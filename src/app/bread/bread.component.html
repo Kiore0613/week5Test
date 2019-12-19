@@ -1,3 +1,7 @@
 <div class="bread-top"></div>
-<app-ingredients></app-ingredients>
+<app-ingredients ></app-ingredients>
+<div class="burger" *ngFor="let ingredient of ingredients">
+  <app-meat *ngIf="ingredient.name === 'meat'">Meat</app-meat>
+  <app-cheese *ngIf="ingredient.name === 'cheese'">Cheese</app-cheese>
+</div>
 <div class="bread-bottom"></div>

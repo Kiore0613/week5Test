@@ -1,6 +1,8 @@
 <div class="container">
   <app-header class="header"></app-header>
-  <app-bread class="burger"></app-bread>
+  <app-bread class="burger" [ingredients]="ingredients" >
+    
+  </app-bread>
   <app-ticket class="ticket"></app-ticket>
-  <app-buttons class="buttons"></app-buttons>
+  <app-buttons class="buttons" (change)="onChanged($event)"></app-buttons>
 </div>

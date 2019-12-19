@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IngredientsData } from '../interfaces/ingredients.interface';
 
 @Component({
   selector: 'app-bread',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadComponent implements OnInit {
 
+  @Input()ingredients: IngredientsData;
+
+  burger() {
+  alert(this.ingredients);
+  }
   constructor() { }
 
   ngOnInit() {

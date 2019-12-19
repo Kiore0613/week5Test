@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IngredientsData } from '../interfaces/ingredients.interface';
 
 @Component({
   selector: 'app-ingredients',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngredientsComponent implements OnInit {
 
+  @Input() messageReceived: string;
+
+  burger() {
+    console.log(this.messageReceived);
+  }
   constructor() { }
 
   ngOnInit() {
